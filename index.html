@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EaseMyTrip</title>
+    <link rel="shortcut icon" href="./assets/icons/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/styling.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div
+        class="logo"
+        style="display: flex; flex-direction: column; gap: 0.5rem"
+      >
+        <img src="./assets/icons/logo.png" alt="" width="140" />
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+          "
+        >
+          <div style="width: 17px; height: 2px; background-color: orange"></div>
+          <p style="font-size: 0.6rem; font-style: italic; font-weight: 500">
+            Bharat ka Travel app
+          </p>
+          <div style="width: 17px; height: 2px; background-color: green"></div>
+        </div>
+      </div>
+
+      <nav>
+        <!-- <div class="logo">
+          <img src="./assets/icons/logo.png" alt="" width="140" />
+        </div> -->
+        <div class="right_nav" id="right_nav">
+          <!--JS-->
+        </div>
+        <div class="right_most">
+          <div class="tagger">
+            <div class="sub">
+              <img src="./assets/icons/001-communication.png" alt="" />
+              <img src="./assets/icons/001-down-arrow.png" alt="" />
+            </div>
+            <div class="sub">
+              <img src="./assets/icons/india.png" alt="" />
+              <span class="pr">India</span>
+
+              <img src="./assets/icons/001-down-arrow.png" alt="" />
+            </div>
+          </div>
+          <button>login or signUp</button>
+        </div>
+      </nav>
+    </header>
+    <hr />
+    <section class="home_page">
+      <img src="./assets/icons/chatbot.png" class="chatbot" alt="" />
+      <div id="icon-c" class="home_ic">
+        <!--js-->
+      </div>
+      <div class="main_container">
+        <div class="inner_main">
+          <ul>
+            <li class="active">One Way</li>
+            <li>Round Trip</li>
+            <li>Multicity</li>
+          </ul>
+          <h2>Search Lowest Price</h2>
+        </div>
+        <!--Data-Box-->
+        <div class="dx_box">
+          <div
+            class="from_bx"
+            style="
+              display: flex;
+              align-items: start;
+              flex-direction: column;
+              justify-content: center;
+              padding: 8px;
+              border-right: 0.7px solid rgba(230, 220, 220, 0.3);
+              position: relative;
+            "
+          >
+            <h6>from</h6>
+            <h2>Delhi</h2>
+            <p>[DEL] Indira Gandhi International Airport</p>
+            <img
+              src="./assets/icons/two-arrows.png"
+              alt=""
+              width="15"
+              style="position: absolute; right: 0"
+            />
+          </div>
+          <div
+            class="to_bx"
+            style="
+              display: flex;
+              align-items: start;
+              flex-direction: column;
+              padding: 10px;
+              justify-content: center;
+              border-right: 0.7px solid rgba(230, 220, 220, 0.3);
+            "
+          >
+            <h6>to</h6>
+            <h2>Mumbai</h2>
+            <p>[BOM] Chathrapaji Shivaji International Airport</p>
+          </div>
+          <div
+            style="
+              display: flex;
+              align-items: start;
+              flex-direction: column;
+              padding: 10px;
+              justify-content: center;
+              border-right: 0.7px solid rgba(230, 220, 220, 0.3);
+            "
+            class="dep_xx"
+          >
+            <h6>Departure Date</h6>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 1rem;
+                justify-content: center;
+              "
+              class="date_xv"
+            >
+              <h2>
+                4<span
+                  style="font-size: 0.8rem; font-weight: 500; margin-left: 4px"
+                  >jul'2025</span
+                >
+              </h2>
+              <img src="./assets/icons/002-calendar.png" alt="" width="20px" />
+            </div>
+            <p>Friday</p>
+          </div>
+          <div
+            class="return_bx"
+            style="
+              display: flex;
+              align-items: start;
+              flex-direction: column;
+              padding: 10px;
+              justify-content: center;
+              border-right: 0.7px solid rgba(230, 220, 220, 0.3);
+            "
+          >
+            <h6>return date</h6>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 0.6rem;
+                margin-top: 12px;
+                border-right: 0.7px solid rgba(230, 220, 220, 0.3);
+              "
+            >
+              <p style="color: grey; width: 110px">
+                book a round trip to save more
+              </p>
+              <img src="./assets/icons/002-calendar.png" alt="" width="20px" />
+            </div>
+          </div>
+          <div
+            class="class_"
+            style="
+              display: flex;
+              align-items: start;
+              flex-direction: column;
+              padding: 10px;
+              justify-content: center;
+            "
+          >
+            <h6>travellor & class</h6>
+            <h2>
+              <span style="font-size: 0.8rem">1 Travellor</span>
+              <img src="./assets/icons/001-down-arrow.png" alt="" />
+            </h2>
+            <p>Economy</p>
+          </div>
+          <button>search</button>
+        </div>
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 13px;
+            gap: 7rem;
+            max-width: 99%;
+            width: 100%;
+          "
+          class="add_xin"
+        >
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 0.5rem;
+              margin-left: 20px;
+            "
+            class="add_xin_inp"
+          >
+            <h5>Special Fares (Optional):</h5>
+            <input type="checkbox" name="" id="" class="inp_x" /><span
+              >defensive forces</span
+            >
+            <input type="checkbox" name="" id="" class="inp_x" /><span
+              >Students</span
+            >
+            <input type="checkbox" name="" id="" class="inp_x" /><span
+              >Senior Citizens</span
+            >
+            <input type="checkbox" name="" id="" class="inp_x" /><span
+              >Doctor Nurses</span
+            >
+          </div>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 0.4rem;
+            "
+          >
+            <input
+              type="checkbox"
+              name=""
+              id=""
+              style="
+                appearance: none;
+                border-radius: 6px;
+                background: transparent;
+                padding: 7px;
+                border: 0.2px solid white;
+              "
+            /><span style="font-size: 0.8rem; font-weight: 600"
+              >Book Hotel & Get up to 45% OFF*</span
+            >
+          </div>
+        </div>
+        <div
+          style="
+            position: absolute;
+            bottom: 0;
+            left: 9%;
+            border: 1px solid white;
+            border-bottom: none;
+            color: white;
+            background: #45acee;
+            border-radius: 7px;
+            text-transform: uppercase;
+            font-size: 0.77rem;
+            padding: 7px;
+          "
+        >
+          discover More
+        </div>
+      </div>
+      <div id="faculty">
+        <!--js-->
+      </div>
+    </section>
+    <!--exclusive-->
+    <section class="exclusive">
+      <h1 class="common">exclusive offers</h1>
+      <div id="exclusive">
+        <h6
+          class="ix_ed"
+          style="
+            color: white;
+            background: linear-gradient(to right, #0265f1, #045cdf);
+            padding: 6px 12px;
+            border-radius: 25px;
+          "
+        >
+          Best Offers
+        </h6>
+      </div>
+      <div class="card_container">
+        <div class="card">
+          <!--Image-->
+          <img src="./assets/icons/cards/card1.jpg" alt="" />
+          <p>Save up to 45% OFF* on your Favourite hotel</p>
+          <span>Valid till:31st Jul,2025</span>
+        </div>
+        <div class="card">
+          <!--Image-->
+          <img src="./assets/icons/cards/card2.jpg" alt="" />
+          <p>Begin your divine journey to enlightenment with EasyDarshan</p>
+          <span>Book now</span>
+        </div>
+        <div class="card">
+          <!--Image-->
+          <img src="./assets/icons/cards/card3.jpg" alt="" />
+          <p>Create Magical moments with group departure tour packages</p>
+          <span>Book now</span>
+        </div>
+        <div class="card">
+          <!--Image-->
+          <img src="./assets/icons/cards/card2.jpg" alt="" />
+          <p>Extra baggage Allowance for Student Travellors</p>
+          <span>Book now</span>
+        </div>
+        <!-- </div> -->
+        <!-- arrows -->
+        <img src="./assets/icons/arrow.png" alt="" class="imgv1" />
+        <img src="./assets/icons/right-arrow.png" alt="" class="imgv2" />
+      </div>
+      <h6
+        class="ix_ed"
+        style="
+          color: white;
+          background: linear-gradient(to right, #0265f1, #045cdf);
+          padding: 6px 12px;
+          border-radius: 25px;
+          max-width: 150px;
+          margin: 2px auto;
+          text-align: center;
+          font-size: 1rem;
+          font-weight: 400;
+        "
+      >
+        View all Offers
+      </h6>
+    </section>
+    <section class="routes">
+      <h1 class="common">top flight routes</h1>
+      <div class="place_container">
+        <div class="place">
+          <img src="./assets/icons/places/pl1.jpg" alt="" />
+          <div>
+            <h3>
+              Chennai
+              <img
+                src="./assets/icons/places/black-plane.png"
+                style="width: 14px"
+                alt=""
+              />
+              Mumbai
+            </h3>
+            <span>MAA-BOM</span>
+          </div>
+        </div>
+        <div class="place">
+          <img src="./assets/icons/places/pl2.jpg" alt="" />
+          <div>
+            <h3>
+              Delhi
+              <img
+                src="./assets/icons/places/black-plane.png"
+                style="width: 14px"
+                alt=""
+              />
+              Ahmedabad
+            </h3>
+            <span>DEL-AMD</span>
+          </div>
+        </div>
+        <div class="place">
+          <img src="./assets/icons/places/pl3.jpg" alt="" />
+          <div>
+            <h3>
+              Delhi
+              <img
+                src="./assets/icons/places/black-plane.png"
+                style="width: 14px"
+                alt=""
+              />
+              Lucknow
+            </h3>
+            <span>DEL-LKO</span>
+          </div>
+        </div>
+        <div class="place">
+          <img src="./assets/icons/places/pl4.jpg" alt="" />
+          <div>
+            <h3>
+              Mumbai
+              <img
+                src="./assets/icons/places/black-plane.png"
+                style="width: 14px"
+                alt=""
+              />
+              Chennai
+            </h3>
+            <span>BOM-MAA</span>
+          </div>
+        </div>
+        <div class="place">
+          <img src="./assets/icons/places/pl3.jpg" alt="" />
+          <div>
+            <h3>
+              Mumbai
+              <img
+                src="./assets/icons/places/black-plane.png"
+                style="width: 14px"
+                alt=""
+              />
+              Dubai
+            </h3>
+            <span>BOM-DXB</span>
+          </div>
+        </div>
+        <div class="place">
+          <img src="./assets/icons/places/pl2.jpg" alt="" />
+          <div>
+            <h3>
+              Mumbai
+              <img
+                src="./assets/icons/places/black-plane.png"
+                style="width: 14px"
+                alt=""
+              />
+              Kolkata
+            </h3>
+            <span>BOM-CCU</span>
+          </div>
+        </div>
+        <div class="place">
+          <img src="./assets/icons/places/pl1.jpg" alt="" />
+          <div>
+            <h3>
+              Hyderabad
+              <img
+                src="./assets/icons/places/black-plane.png"
+                style="width: 14px"
+                alt=""
+              />
+              Bangalore
+            </h3>
+            <span>HYD-BLR</span>
+          </div>
+        </div>
+        <div class="place">
+          <img src="./assets/icons/places/pl2.jpg" alt="" />
+          <div>
+            <h3>
+              Mumbai
+              <img
+                src="./assets/icons/places/black-plane.png"
+                style="width: 14px"
+                alt=""
+              />
+              Jaipur
+            </h3>
+            <span>BOM-JAI</span>
+          </div>
+        </div>
+        <div class="place">
+          <img src="./assets/icons/places/pl4.jpg" alt="" />
+          <div>
+            <h3>
+              Delhi
+              <img
+                src="./assets/icons/places/black-plane.png"
+                style="width: 14px"
+                alt=""
+              />
+              Dubai
+            </h3>
+            <span>DEL-DXB</span>
+          </div>
+        </div>
+      </div>
+      <div class="side_bx">
+        <div
+          class="side_bxx"
+          style="
+            display: flex;
+            align-items: center;
+            gap: 1.4rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08),
+              0 6px 20px rgba(0, 0, 0, 0.07);
+            border-radius: 5px;
+            border-top-left-radius: 25px;
+            max-width: 650px;
+            width: 100%;
+            padding: 10px;
+          "
+        >
+          <div>
+            <img
+              src="./assets/icons/places/gpt1.png"
+              style="
+                background: #e2f2ff;
+                padding: 12px;
+                border-top-right-radius: 50%;
+                border-bottom-right-radius: 50%;
+              "
+              alt=""
+            />
+          </div>
+          <div>
+            <h3>Important Info:</h3>
+            <p>To cancel/claim refund or reschedule/modify your booking.</p>
+            <a href="#">Click here...</a>
+          </div>
+        </div>
+        <div
+          class="side_bxx"
+          style="
+            display: flex;
+            align-items: center;
+            gap: 1.4rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08),
+              0 6px 20px rgba(0, 0, 0, 0.07);
+            border-radius: 5px;
+            border-top-left-radius: 25px;
+            max-width: 650px;
+            width: 100%;
+            padding: 10px;
+          "
+        >
+          <div>
+            <img
+              src="./assets/icons/places/airline-notification (1).svg"
+              width="20"
+              style="
+                background: #e2f2ff;
+                padding: 12px;
+                border-top-right-radius: 90%;
+                border-bottom-right-radius: 90%;
+              "
+              alt=""
+            />
+          </div>
+          <div>
+            <h3>Airline Notifications</h3>
+            <p>
+              Get instant flight updates, notifications and travel alerts from
+              airlines to remain informed <a href="#">Click here ...</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="attraction">
+      <h1 class="common">famous tourist attraction</h1>
+      <div id="tourist_spots">
+        <!-- dynamically -->
+      </div>
+    </section>
+    <section class="fav_place">
+      <h1 class="common">favourite places to stay</h1>
+      <div class="fav_contx">
+        <div class="att_bx">
+          <h4>Delhi</h4>
+          <span>explore</span>
+          <img src="./assets/icons/building.png" width="30" alt="" />
+        </div>
+        <div class="att_bx">
+          <h4>Mumbai</h4>
+          <span>explore</span>
+          <img src="./assets/icons/building.png" width="30" alt="" />
+        </div>
+        <div class="att_bx">
+          <h4>Bengaloru</h4>
+          <span>explore</span>
+          <img src="./assets/icons/building.png" width="30" alt="" />
+        </div>
+        <div class="att_bx">
+          <h4>Jaipur</h4>
+          <span>explore</span>
+          <img src="./assets/icons/building.png" width="30" alt="" />
+        </div>
+        <div class="att_bx">
+          <h4>Chennai</h4>
+          <span>explore</span>
+          <img src="./assets/icons/building.png" width="30" alt="" />
+        </div>
+      </div>
+      <h6
+        class="ix_ed"
+        style="
+          color: white;
+          background: linear-gradient(to right, #0265f1, #045cdf);
+          padding: 6px 12px;
+          border-radius: 25px;
+          max-width: 150px;
+          margin: 2px auto;
+          text-align: center;
+          font-size: 1rem;
+          font-weight: 400;
+          margin-top: 20px;
+        "
+      >
+        View all
+      </h6>
+    </section>
+    <section class="blogs">
+      <h1 class="common">enjoy fresh travel blogs</h1>
+      <div class="travel-container">
+        <div
+          class="travels"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.2)
+              ),
+              url(./assets/icons/Spots/spot1.jpg);
+          "
+        >
+          <h6>Hotels</h6>
+          <p>
+            Best 5 star hotels Near Bangalore Airport for Corporate Travellors
+          </p>
+          <div
+            style="
+              background: transparent;
+              backdrop-filter: blur(20px);
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 12px;
+              cursor: pointer;
+            "
+          >
+            <span>Read More</span>
+            <img
+              src="./assets/icons/Spots/white-icon.png"
+              width="32px"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- 2 -->
+        <div
+          class="travels"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.2)
+              ),
+              url(./assets/icons/Spots/spot2.jpg);
+          "
+        >
+          <h6>Hotels</h6>
+          <p>Best 5 star Hotels in Jaipur for the Ideal Royale escape</p>
+          <div
+            style="
+              background: transparent;
+              backdrop-filter: blur(20px);
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 12px;
+            "
+          >
+            <span>Read More</span>
+            <img
+              src="./assets/icons/Spots/white-icon.png"
+              width="32px"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- 3 -->
+        <div
+          class="travels"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.2)
+              ),
+              url(./assets/icons/Spots/spot3.jpg);
+          "
+        >
+          <h6>Holiday Destinations</h6>
+          <p>How much Luggage can I take on indigo flight?</p>
+          <div
+            style="
+              background: transparent;
+              backdrop-filter: blur(20px);
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 12px;
+            "
+          >
+            <span>Read More</span>
+            <img
+              src="./assets/icons/Spots/white-icon.png"
+              width="32px"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- 4 -->
+        <div
+          class="travels"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.2)
+              ),
+              url(./assets/icons/Spots/spot4.jpg);
+          "
+        >
+          <h6>Holiday Destinations</h6>
+          <p>
+            Experience rural Madhya pradesh with these off beat Village Home
+            stays
+          </p>
+          <div
+            style="
+              background: transparent;
+              backdrop-filter: blur(20px);
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 12px;
+            "
+          >
+            <span>Read More</span>
+            <img
+              src="./assets/icons/Spots/white-icon.png"
+              width="32px"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <h6
+        class="ix_ed"
+        style="
+          color: white;
+          background: linear-gradient(to right, #0265f1, #045cdf);
+          padding: 6px 12px;
+          border-radius: 25px;
+          max-width: 150px;
+          margin: 2px auto;
+          text-align: center;
+          font-size: 1rem;
+          font-weight: 400;
+        "
+      >
+        View all
+      </h6>
+    </section>
+    <section class="why_book">
+      <div class="why_x">
+        <h1>why book with us ?</h1>
+        <div class="star_c">
+          <p style="font-size: 0.95rem">Great</p>
+          <img
+            src="./assets/icons/white-star.png"
+            alt=""
+            style="background: #73cf11; padding: 3px"
+            width="20px"
+          />
+          <img
+            src="./assets/icons/white-star.png"
+            alt=""
+            style="background: #73cf11; padding: 3px"
+            width="20px"
+          />
+          <img
+            src="./assets/icons/white-star.png"
+            alt=""
+            style="background: #73cf11; padding: 3px"
+            width="20px"
+          />
+          <img
+            src="./assets/icons/white-star.png"
+            alt=""
+            style="background: #73cf11; padding: 3px"
+            width="20px"
+          />
+          <img
+            src="./assets/icons/white-star.png"
+            alt=""
+            style="background: rgb(126, 126, 126); padding: 3px"
+            width="20px"
+          />
+          <div
+            style="
+              font-size: 0.8rem;
+              display: flex;
+              align-items: center;
+              flex-direction: row;
+              gap: 0.12rem;
+            "
+          >
+            13,894 reviews on
+            <img src="./assets/icons/green-star.png" width="20px" alt="" />Trust
+            pilot
+          </div>
+        </div>
+      </div>
+      <div class="details" id="details">
+        <!-- dynamicaly -->
+      </div>
+      <div class="review">
+        <div class="rev_bx">
+          <div>
+            <img
+              src="./assets/icons/white-star.png"
+              alt=""
+              width="14px"
+              style="padding: 3px; background-color: darkgreen"
+            />
+            <img
+              src="./assets/icons/white-star.png"
+              alt=""
+              width="14px"
+              style="padding: 3px; background-color: darkgreen"
+            />
+            <img
+              src="./assets/icons/white-star.png"
+              alt=""
+              width="14px"
+              style="padding: 3px; background-color: darkgreen"
+            />
+            <img
+              src="./assets/icons/white-star.png"
+              alt=""
+              width="14px"
+              style="padding: 3px; background-color: darkgreen"
+            />
+            <img
+              src="./assets/icons/white-star.png"
+              alt=""
+              width="14px"
+              style="padding: 3px; background-color: darkgreen"
+            />
+          </div>
+          <b>Best travel experience</b>
+          <p>Everything was smooth and on time.</p>
+          <span
+            ><span style="font-weight: 800">ARJUN MEHTA </span>· 1 day ago</span
+          >
+        </div>
+
+        <div class="rev_bx">
+          <div>
+            <img
+              src="./assets/icons/white-star.png"
+              alt=""
+              width="14px"
+              style="padding: 3px; background-color: darkgreen"
+            />
+            <img
+              src="./assets/icons/white-star.png"
+              alt=""
+              width="14px"
+              style="padding: 3px; background-color: darkgreen"
+            />
+            <img
+              src="./assets/icons/white-star.png"
+              alt=""
+              width="14px"
+              style="padding: 3px; background-color: darkgreen"
+            />
+            <img
+              src="./assets/icons/white-star.png"
+              alt=""
+              width="14px"
+              style="padding: 3px; background-color: darkgreen"
+            />
+            <img
+              src="./assets/icons/white-star.png"
+              alt=""
+              width="14px"
+              style="padding: 3px; background-color: darkgreen"
+            />
+          </div>
+          <b>Highly recommended!</b>
+          <p>Professional service and very reliable.</p>
+          <span
+            ><span style="font-weight: 800">PRIYA SHARMA</span> · 2 days
+            ago</span
+          >
+        </div>
+
+        <div class="rev_bx">
+          <div>
+            <img
+              src="./assets/icons/white-star.png"
+              alt=""
+              width="14px"
+              style="padding: 3px; background-color: darkgreen"
+            />
+            <img
+              src="./assets/icons/white-star.png"
+              alt=""
+              width="14px"
+              style="padding: 3px; background-color: darkgreen"
+            />
+            <img
+              src="./assets/icons/white-star.png"
+              alt=""
+              width="14px"
+              style="padding: 3px; background-color: darkgreen"
+            />
+            <img
+              src="./assets/icons/white-star.png"
+              alt=""
+              width="14px"
+              style="padding: 3px; background-color: darkgreen"
+            />
+            <img
+              src="./assets/icons/white-star.png"
+              alt=""
+              width="14px"
+              style="padding: 3px; background-color: darkgreen"
+            />
+          </div>
+          <b>Great value for money</b>
+          <p>Affordable and comfortable journey.</p>
+          <span
+            ><span style="font-weight: 800">RAHUL VERMA</span> · 3 days
+            ago</span
+          >
+        </div>
+
+        <div class="rev_bx">
+          <div>
+            <img
+              src="./assets/icons/white-star.png"
+              alt=""
+              width="14px"
+              style="padding: 3px; background-color: darkgreen"
+            />
+            <img
+              src="./assets/icons/white-star.png"
+              alt=""
+              width="14px"
+              style="padding: 3px; background-color: darkgreen"
+            />
+            <img
+              src="./assets/icons/white-star.png"
+              alt=""
+              width="14px"
+              style="padding: 3px; background-color: darkgreen"
+            />
+            <img
+              src="./assets/icons/white-star.png"
+              alt=""
+              width="14px"
+              style="padding: 3px; background-color: darkgreen"
+            />
+            <img
+              src="./assets/icons/white-star.png"
+              alt=""
+              width="14px"
+              style="padding: 3px; background-color: darkgreen"
+            />
+          </div>
+          <b>Loved the experience</b>
+          <p>Clean, safe, and friendly staff.</p>
+          <span
+            ><span style="font-weight: 800">SNEHA KAPOOR</span> april 15
+          </span>
+        </div>
+
+        <div class="rev_bx">
+          <div>
+            <img
+              src="./assets/icons/white-star.png"
+              alt=""
+              width="14px"
+              style="padding: 3px; background-color: darkgreen"
+            />
+            <img
+              src="./assets/icons/white-star.png"
+              alt=""
+              width="14px"
+              style="padding: 3px; background-color: darkgreen"
+            />
+            <img
+              src="./assets/icons/white-star.png"
+              alt=""
+              width="14px"
+              style="padding: 3px; background-color: darkgreen"
+            />
+            <img
+              src="./assets/icons/white-star.png"
+              alt=""
+              width="14px"
+              style="padding: 3px; background-color: darkgreen"
+            />
+            <img
+              src="./assets/icons/white-star.png"
+              alt=""
+              width="14px"
+              style="padding: 3px; background-color: darkgreen"
+            />
+          </div>
+          <b>Excellent customer support</b>
+          <p>Helped me quickly with all my queries.</p>
+          <span
+            ><span style="font-weight: 800">VIKRAM SINGH</span> june 30
+          </span>
+        </div>
+      </div>
+
+      <!-- end -->
+      <div class="endlist">
+        <h2>Search Flights, Hotels, Bus and Holiday Packages</h2>
+        <p>
+          EaseMyTrip is one of the largest online travel platforms in India, and
+          a trusted name in the Indian travel industry. We offer "end to end"
+          travel solutions including air tickets, hotel booking, cab and bus
+          booking, train tickets and holiday packages. Additionally, we offer
+          ancillary value-added services.
+        </p>
+        <p>
+          We understand that planning a trip can be overwhelming, so we have
+          simplified the process to make it easy for you to find the perfect
+          travel deals that suit your needs. Our website is user-friendly and
+          provides a wide range of options to choose from. Whether you're
+          planning a family vacation, a solo adventure, or a business trip, we
+          have you covered with our comprehensive travel packages. From flights
+          to hotels, car rentals to holiday packages, we offer everything you
+          need to make your trip a success.
+        </p>
+        <p>
+          We believe in transparency and honesty in all our dealings. We do not
+          charge any hidden fees, and our prices are always competitive. With
+          EaseMyTrip, you can be assured of getting the best travel deals in the
+          market. If you're looking for a hassle-free and affordable way to plan
+          your next trip, look no further than EaseMyTrip. We promise to make
+          your travel experience a memorable one.
+        </p>
+      </div>
+    </section>
+    <!-- <div
+        style="
+          width: 100%;
+          height: 20px;
+          background: linear-gradient(to right, #0068fa, #5ec5fc);
+        "
+      ></div -->
+    <footer>
+      <div class="top-footer">
+        <div class="contents" style="padding: 15px">
+          <ul>
+            <div style="display: flex; align-items: center">
+              <div
+                style="
+                  color: white;
+                  background: #2196f3;
+                  padding: 5px 32px;
+                  text-transform: uppercase;
+                  font-size: 0.9rem;
+                  text-align: left;
+                  max-width: 700px;
+                  width: 100%;
+                "
+              >
+                our offerings
+              </div>
+              <div
+                style="
+                  width: 0;
+                  height: 0;
+                  border-top: 17px solid transparent;
+                  border-bottom: 17px solid transparent;
+                  border-left: 20px solid #2196f3;
+                "
+              ></div>
+            </div>
+            <li class="uniq_li">QUICK LINKS</li>
+            <li class="uniq_li">POPULAR DESTINATION</li>
+            <li class="uniq_li">INTERNATIONAL DESTINATION</li>
+            <li class="uniq_li">POPULAR AIRLINE</li>
+            <li class="uniq_li">CONNECT WITH US</li>
+            <li class="uniq_li">OFFERS</li>
+            <li class="uniq_li">EMT INSIGHTS</li>
+            <li class="uniq_li">MEDIA</li>
+            <li class="uniq_li">INVESTOR RELATIONS</li>
+            <li class="uniq_li">CURRENT OPENINGS</li>
+          </ul>
+        </div>
+        <div class="right-content">
+          <p
+            style="
+              font-weight: 600;
+              text-align: left;
+              font-size: 1rem;
+              padding-bottom: 22px;
+            "
+          >
+            Make your travel easy with a wide range of products and services.
+          </p>
+          <div class="right-contents-x">
+            <ul class="footer-list">
+              <li>Flights</li>
+              <li>Hotels</li>
+              <li>Trains</li>
+              <li>Holidays</li>
+              <li>Bus</li>
+              <li>Cabs</li>
+              <li>Flight Status</li>
+              <li>Airlines</li>
+              <li>Airports</li>
+              <li>Travel Guides</li>
+              <li>Check PNR Status</li>
+              <li>EMT PRO</li>
+              <li>Activities</li>
+              <li>Travel Updates</li>
+              <li>Corporate Travel</li>
+              <li>Blog</li>
+              <li>Flight Check-in</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr style="background: rgba(197, 195, 195, 0.253)" />
+      <div class="footer-end">
+        <div>
+          <img
+            src="./assets/icons/footer/EMTLogo_white.png"
+            width="155"
+            alt=""
+          />
+          <p style="font-size: 0.84rem; width: 75%">
+            EaseMyTrip offers 'End to End' travel solutions including air
+            tickets for more than 400 international and domestic airlines, hotel
+            bookings for nearly 1 million hotels in India and abroad, cab
+            booking with 4000+ cab operators, bus tickets with 2000+ bus
+            operators, and railway tickets in India for all major cities.
+          </p>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr)">
+          <div style="padding: 10px">
+            <h5 style="font-size: 0.93rem; font-weight: 400">
+              Download EaseMyTrip App
+            </h5>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 0.8rem;
+                margin: 25px 0 0 0;
+              "
+            >
+              <img
+                src="./assets/icons/footer/androidft.png"
+                alt=""
+                width="260"
+              />
+              <img src="assets/icons/footer/iosnovft.png" alt="" width="260" />
+            </div>
+          </div>
+          <div
+            style="display: flex; align-items: center; flex-direction: column"
+          >
+            <h5
+              style="
+                text-transform: uppercase;
+                font-weight: 400;
+                font-size: 0.95rem;
+              "
+            >
+              scan qr code
+            </h5>
+            <img
+              src="./assets/icons/footer/ftnovqrcode.png"
+              alt=""
+              width="100"
+              style="margin-top: 25px"
+            />
+          </div>
+        </div>
+      </div>
+      <hr style="background: rgba(197, 195, 195, 0.253)" />
+      <div
+        style="
+          margin-top: 12px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: auto;
+        "
+      >
+        <p style="color: #707070; font-size: 0.85rem">
+          Copyright © 2025 EaseMyTrip
+        </p>
+        <!-- <p>copyright</p> -->
+        <div>
+          <img
+            src="./assets/icons/footerSpons.png"
+            width="620"
+            style="margin-top: 10px"
+            alt=""
+          />
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/scripts/script.js"></script>
+    <script src="./assets/scripts/Ref.js"></script>
+  </body>
+</html>
